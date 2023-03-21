@@ -1,0 +1,16 @@
+Summary of the Analysis
+
+    For the purpose of this analysis, data from fifteen schools were used -- data such as number of students, budget, and student scores in Math and Reading. Initially, the data were either totaled, or averaged for all the school, and, in some cases were further analysed (i.e. percentage of students that achieved passing scores, or a score greater than 70, in a particular subject matter). The result is summarized in the district_summary dataframe. 
+    
+    The data was then further scrutinized per individual schools (refer to per_school_summary dataframe). Each school was classified according to its type, and the total number of students per school were gathered; total budget per school as well budget per student of each school ; as well as scores in Math and Reading, and the percentage of students that achieved a passing grade per school. The dataframes were then sorted to select top 5 highest-performing and the bottom 5 lowest-performing schools according to overall performance in both Math and Reading (refer to highest_performing_schools and bottom_performing_schools dataframe). 
+    
+    Lastly, to gain a deeper look into the data, Math and Reading scores per grade (grades 9-12) were averaged for each school (refer to the dataframes math_score_by_grade and reading_score_by_grade for more detals). The resulting data were put side-by-side in a dataframe to analyse its relationship with variables such as allotted budget per student, school size, and type of school (refer to spending_summary, school_size, type_summary dataframes, respectively).
+    
+    
+Conclusions
+    
+    From comparing the "Highest-Performing" and "Bottom-Performing School (By % Overall Passing)", it seems that funding (Total School Budget, and Per Student Budget) does not determine student success (% Overall Passing). In fact, the five highest performing schools had low-mid values for Total School Budget and Per Student Budget, and the five worst performing schools had mid-high values for the same budget columns. This suggests that there might be another factor that is impacting student success.
+    
+    Taking into consideration the information in the above paragraph, and going through the last three dataframes (Scores by School Spending, by School Size, and by School Type), it can be concluded that school type is the variable that greatly impacts student success -- students in Charter schools achieved 90.4% overall passing rate, and students in District schools achieving a 53.7% overall passing rate. 
+    
+    However, further analysis might be needed because there are nuanced differences between Charter and District schools (assuming that this dataset were taken from school in the USA). For example, although both types receive public funding from local government Charter schools are also allowed to receive funding from the state and/or non-government organizations. It would be interesting to differentiate where a school's funding originates from, as well as to analyze where funding is allocated (i.e. into hiring staff, improving infrastructure).     
